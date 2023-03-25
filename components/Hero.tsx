@@ -1,5 +1,5 @@
 import React from "react";
-import { useTypewriter } from "react-simple-typewriter";
+import { useTypewriter, Cursor } from "react-simple-typewriter";
 
 type Props = {};
 
@@ -12,7 +12,10 @@ function Hero({}: Props) {
 
   return (
     <div>
-      <p>{text}</p>
+      <h1>
+        <span>{text}</span>
+        <Cursor cursorColor="blue" />
+      </h1>
     </div>
   );
 }
