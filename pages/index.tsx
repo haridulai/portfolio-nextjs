@@ -12,7 +12,6 @@ export default function Home() {
         <title>Harinder Dulai's Portfolio</title>
       </Head>
 
-      {/* Header */}
       <Header />
 
       {/* Hero */}
