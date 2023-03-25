@@ -1,6 +1,7 @@
 import Head from "next/head";
 import { Inter } from "next/font/google";
 import styles from "@/styles/Home.module.css";
+import Header from "@/components/Header";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -9,14 +10,22 @@ export default function Home() {
     <>
       <Head>
         <title>Harinder Dulai's Portfolio</title>
-        <meta
-          name="description"
-          content="Hari Dulai - portfolio - Harinder Dulai"
-        />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
       </Head>
-      <h1 className="p-10 text-red-500">Let's build an awesome portfolio</h1>
+
+      {/* Header */}
+      <Header />
+
+      {/* Hero */}
+
+      {/* About */}
+
+      {/* Experiences */}
+
+      {/* Skills */}
+
+      {/* Projects */}
+
+      {/* Contact me */}
     </>
   );
 }
