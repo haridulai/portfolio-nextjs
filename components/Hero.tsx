@@ -12,7 +12,7 @@ function Hero({}: Props) {
   });
 
   return (
-    <div>
+    <div className="h-screen flex flex-col space-y-8 items-center justify-center">
       <BackgroundCircles />
       <h1>
         <span>{text}</span>
