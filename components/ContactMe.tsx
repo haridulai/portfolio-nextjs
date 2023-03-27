@@ -1,4 +1,5 @@
 import React from "react";
+import { PhoneIcon, MapPinIcon, EnvelopeIcon } from "@heroicons/react/24/solid";
 
 function ContactMe() {
   return (
@@ -11,6 +12,35 @@ function ContactMe() {
           I have got just what you need.{" "}
           <span className="decoration-[#F7AB0A]/50 underline">Lets Talk.</span>
         </h4>
+
+        <div className="space-y-10">
+          <div className="flex items-center justify-center space-x-5">
+            <PhoneIcon className="text-[#F7AB0A] h-7 w-7 animate-pulse" />
+            <p className="text-2xl">\12345</p>
+          </div>
+          <div className="flex items-center justify-center space-x-5">
+            <EnvelopeIcon className="text-[#F7AB0A] h-7 w-7 animate-pulse" />
+            <p className="text-2xl">dulaiharinder@gmail.com</p>
+          </div>
+          <div className="flex items-center justify-center space-x-5">
+            <MapPinIcon className="text-[#F7AB0A] h-7 w-7 animate-pulse" />
+            <p className="text-2xl">123 developer lane</p>
+          </div>
+        </div>
+        <form className="flex flex-col space-y-2 w-fit mx-auto">
+          <div className="flex space-x-2">
+            <input placeholder="Name" className="contactInput" type="text" />
+            <input placeholder="Email" className="contactInput" type="email" />
+          </div>
+          <input placeholder="Subject" className="contactInput" type="text" />
+          <textarea placeholder="Message" className="contactInput" />
+          <button
+            type="submit"
+            className="bg-[#F7AB0A] py-5 px-10 rounded-md text-black font-bold text-lg"
+          >
+            Submit
+          </button>
+        </form>
       </div>
     </div>
   );
