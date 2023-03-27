@@ -11,8 +11,9 @@ type FormValues = {
 
 function ContactMe() {
   const { register, handleSubmit } = useForm<FormValues>();
-  const onSubmit: SubmitHandler<FormValues> = (formData) =>
-    console.log(formData);
+  const onSubmit: SubmitHandler<FormValues> = (formData) => {
+    window.location.href = `mailto:dulaiharinder@gmail.com?subject=${formData.subject}&body=Hi, my name is ${formData.name}. ${formData.message} (${formData.email})`;
+  };
 
   return (
     <div className="h-screen flex relative flex-1 text-center md:text-left md:flex-row max-w-7xl px-10 justify-evenly mx-auto items-center">
