@@ -13,6 +13,7 @@ import { fetchSkills } from "../utils/fetchSkills";
 import { fetchProjects } from "../utils/fetchProjects";
 import { fetchSocial } from "../utils/fetchSocials";
 import Link from "next/link";
+import { ArrowSmallUpIcon } from "@heroicons/react/24/solid";
 
 type Props = {
   pageInfo: PageInfo;
@@ -25,7 +26,7 @@ type Props = {
 const Home = ({ projects, skills, pageInfo, experiences, socials }: Props) => {
   return (
     <div className="snap-y snap-mandatory h-screen overflow-y-scroll scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/80 bg-[rgb(36,36,36)] text-white z-0">
-      <Header />
+      <Header socials={socials} />
 
       {/* Hero Banner Section */}
       <section id="hero" className="snap-start">
@@ -60,11 +61,7 @@ const Home = ({ projects, skills, pageInfo, experiences, socials }: Props) => {
       <Link href="#hero">
         <footer className="sticky bottom-5 w-full cursor-pointer">
           <div className="flex items-center justify-center">
-            <img
-              className="h-10 w-10 rounded-full filter grayscale hover:grayscale-0 cursor-pointer"
-              src="https://i.imgur.com/e2yvD6A.png"
-              alt=""
-            />
+            <ArrowSmallUpIcon className="h-10 w-10 rounded-full filter grayscale hover:grayscale-0 cursor-pointer" />
           </div>
         </footer>
       </Link>
